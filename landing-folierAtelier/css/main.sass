@@ -1,0 +1,55 @@
+@font-face
+  font-family: "neutraTextBold"
+  src: url("fonts/NeutraText-Bold.otf") format("opentype")
+  font-family: "lillyBelle"
+  src: url("fonts/LillyBelle.ttf") format("truetype")
+
+$font-neutraBold: "neutraTextBold", sans-serif
+$font-lillyBelle: "lillyBelle", sans-serif
+$color-wine : #883A53
+$color-pink: #DC819C
+$color-beige: #EFD8CC
+
+body
+  background-color: $color-beige
+  margin: 0
+  padding: 0
+  width: 100%
+
+#main
+  background: url("../assets/images/leaves.png")
+  background-size: cover
+  background-position: center
+  font-family: $font-neutraBold
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+#logo
+  width: 70%
+
+#title
+  color: $color-wine
+  font-size: 2em
+  margin-top: 0
+  padding-top: 0
+  text-align: center
+  text-transform: uppercase
+
+#text
+  color: $color-pink
+
+
+#icons
+  align-self: center
+
+.social-network-icon
+  background-color: $color-wine
+  border-radius: 0.8em
+  display: inline
+
+@media all and (min-width: 880px)
+  #logo
+    width: 35%

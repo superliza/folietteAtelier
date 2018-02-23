@@ -1,0 +1,214 @@
+@font-face
+  font-family: "neutraTextBold"
+  src: url("fonts/NeutraText-Bold.otf") format("opentype")
+  font-family: "lillyBelle"
+  src: url("fonts/LillyBelle.ttf") format("truetype")
+
+$font-neutraBold: "neutraTextBold", sans-serif
+$font-lillyBelle: "lillyBelle", sans-serif
+$color-wine : #883A53
+$color-pink: #DC819C
+$color-beige: #EFD8CC
+//r
+
+
+
+/* ---- ESTILOS DEL SLIDER --- */
+#links
+  width: 100%
+
+#link-fb
+  top: 16vh
+
+#link-insta
+  top: 27vh
+
+.social-network-btn
+  background: $color-wine
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  border-radius: 13px
+  display: block
+  float: right
+  height: 8vh
+  position: fixed
+  right: 0
+  width: 8vh
+  z-index: 100
+
+/* ---- ESTILOS DEL SLIDER --- */
+.slider
+  margin-bottom: -7vh
+
+.slider .indicators .indicator-item
+  background-color: rgba(255, 255, 255, 0.3)!important
+
+
+.slider .indicators .indicator-item.active
+  background-color: $color-pink!important
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+
+.slider .indicators
+  bottom: 8vh!important
+  z-index: 100!important
+
+.ug-gallery-wrapper .ug-grid-panel
+  background: none !important
+
+
+/* ---- ESTILOS DEL NAV --- */
+#nav
+  background-color: $color-beige
+  padding-left: 3vw
+
+#nav ul a
+  color: $color-wine
+  font-variant: small-caps
+
+#brand-logo
+  box-sizing: border-box
+
+
+#nav-logo
+  height: 1.6em
+
+
+#logo-foliette
+  color: $color-wine
+  font-family: $font-neutraBold
+  font-size: 0.6em
+  margin-left: 0.7vw
+
+#logo-atelier
+  color: $color-pink
+  font-family: $font-lillyBelle
+  font-size: 0.6em
+
+.nav-item
+  &:hover
+    border-radius: 5px
+    color: $color-beige!important
+    background-color: rgba(136, 58, 83, 0.9)
+    text-decoration: underline
+
+/* ---- ESTILOS DE PRODUCTOS --- */
+#products
+  background-color: $color-wine
+
+
+.products-img
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  &:hover
+    border: 5px solid $color-pink
+
+
+.products-name
+  color: $color-pink
+  font-family: $font-lillyBelle
+  font-size: 1.4em
+
+
+/* ---- ESTILOS DE LA GALERÍA --- */
+
+#sample-fabric
+  background-color: $color-wine
+
+/* ---- ESTILOS DEL BLOG --- */
+
+#blog
+  background: url("../assets/images/foliette-name.png")
+  background-repeat: no-repeat
+  background-size: 160%
+  background-position: 99% 55%
+
+
+.card-image-size
+  height: 25vh
+
+.card.small .card-image+.card-content, .card.medium .card-image+.card-content, .card.large .card-image+.card-content
+  max-height: 45%!important
+
+
+
+/* ---- ESTILOS DE HISTORIA --- */
+
+#about
+  background-color: $color-wine
+
+
+
+/* ---- ESTILOS DE CONTACTO --- */
+
+#contact
+  //background-color: $color-beige
+  //background: url("../assets/images/notebook-cut.png")
+  background-position: center
+  background-size: cover
+  padding: 3vh 0
+
+#contact-email
+  border: 2px solid $color-pink
+  border-radius: 0.7em
+  color: $color-wine
+  font-size: 0.7em
+  padding: 0.5em 1em
+
+/* ---- ESTILOS DE FOOTER --- */
+#footer-logo
+  display: inline
+  height: 5vh
+
+#footer-foliette
+  color: $color-beige
+  font-family: $font-neutraBold
+  font-size: 1em
+  margin-left: 0.4vw
+
+#footer-atelier
+  color: $color-pink
+  font-family: $font-lillyBelle
+  font-size: 1em
+
+#follow
+  color: $color-pink
+  font-variant: small-caps
+
+.footer-icon
+  height: 5vh
+  padding-left: 1vw
+
+footer
+  background-color: $color-wine
+  color: $color-beige
+  margin: 0
+  padding: 3vh 0 1vh 0
+
+footer p
+  margin: 0
+
+
+
+
+
+/* ---- ESTILOS GENERALES --- */
+section
+  padding: 4vh 0
+
+.section-logo
+  height: 4em
+
+.section-name
+  color: $color-beige
+  font-family: $font-neutraBold
+  font-size: 1.9em
+  margin-top: 0
+  &:hover
+    text-decoration: underline
+
+.btn-style
+  border-radius: 0.7em
+  background-color: $color-wine
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)
+  color: $color-beige
+  padding: 0.8em
+  text-align: right
