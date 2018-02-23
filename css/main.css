@@ -142,11 +142,20 @@
 
 #follow {
   color: #DC819C;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+  margin-top: 5vh; }
 
 .footer-icon {
+  display: inline-block;
   height: 5vh;
+  margin-top: 5vh;
   padding-left: 1vw; }
+
+.footer-logo-modo {
+  border-radius: 5px;
+  display: block;
+  height: 10vh;
+  margin-top: 2vh; }
 
 footer {
   background-color: #883A53;
