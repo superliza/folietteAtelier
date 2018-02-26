@@ -1,10 +1,20 @@
 @font-face
-  font-family: "neutraTextBold"
-  src: url("fonts/NeutraText-Bold.otf") format("opentype")
   font-family: "lillyBelle"
   src: url("fonts/LillyBelle.ttf") format("truetype")
 
+@font-face
+  font-family: "neutraTextBook"
+  src: url("fonts/NeutraText-Book.otf") format("opentype")
+
+@font-face
+  font-family: "neutraTextBold"
+  src: url("fonts/NeutraBold.otf") format("opentype")
+
+
+
+
 $font-neutraBold: "neutraTextBold", sans-serif
+$font-neutraBook: "neutraTextBook", sans-serif
 $font-lillyBelle: "lillyBelle", sans-serif
 $color-wine : #883A53
 $color-pink: #DC819C
@@ -12,8 +22,7 @@ $color-beige: #EFD8CC
 //r
 
 
-
-/* ---- ESTILOS DEL SLIDER --- */
+/* ---- ESTILOS DE SOCIAL NETWORK --- */
 #links
   width: 100%
 
@@ -34,6 +43,7 @@ $color-beige: #EFD8CC
   right: 0
   width: 8vh
   z-index: 100
+
 
 /* ---- ESTILOS DEL SLIDER --- */
 .slider
@@ -63,7 +73,9 @@ $color-beige: #EFD8CC
 
 #nav ul a
   color: $color-wine
-  font-variant: small-caps
+  font-family: $font-neutraBold
+  font-size: 0.8em
+  text-transform: uppercase
 
 #brand-logo
   box-sizing: border-box
@@ -95,6 +107,10 @@ $color-beige: #EFD8CC
 #products
   background-color: $color-wine
 
+#products p
+  color: $color-beige
+  font-family: $font-neutraBook
+  margin: 0
 
 .products-img
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
@@ -104,8 +120,23 @@ $color-beige: #EFD8CC
 
 .products-name
   color: $color-pink
-  font-family: $font-lillyBelle
+  font-family: $font-neutraBold
   font-size: 1.4em
+  margin-bottom: 1vh
+
+.products-shop
+  margin-right: 0.5em
+  margin-bottom: -1vh
+
+.products-info
+  color: $color-pink
+  border: 1px solid $color-pink
+  border-radius: 0.3em
+  display: inline-block
+  padding: 0.2em 0.3em
+  &:hover
+    background-color: $color-pink
+    border: 1px solid $color-beige
 
 
 /* ---- ESTILOS DE LA GALERÍA --- */
@@ -133,14 +164,22 @@ $color-beige: #EFD8CC
 /* ---- ESTILOS DE HISTORIA --- */
 
 #about
-  background-color: $color-wine
+  background: url("../assets/images/leaves-background.png") no-repeat
+  background-position: cover
+  color: $color-wine
+  font-family: $font-neutraBook
 
+.about-text
+  margin-top: 6vh
 
+.about-name
+  font-family: $font-neutraBold
 
 /* ---- ESTILOS DE CONTACTO --- */
 
 #contact
-  //background-color: $color-beige
+  background-color: $color-beige
+
   //background: url("../assets/images/notebook-cut.png")
   background-position: center
   background-size: cover
@@ -172,19 +211,14 @@ $color-beige: #EFD8CC
 #follow
   color: $color-pink
   font-variant: small-caps
-  margin-top: 5vh
 
 .footer-icon
-  display: inline-block
   height: 5vh
-  margin-top: 5vh
   padding-left: 1vw
 
-.footer-logo-modo
-  border-radius: 5px
-  display: block
-  height: 10vh
-  margin-top: 2vh
+.footer-modo
+  border-radius: 0.7em
+  height: 12vh
 
 footer
   background-color: $color-wine
