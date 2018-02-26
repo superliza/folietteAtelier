@@ -1,10 +1,14 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "neutraTextBold";
-  src: url("fonts/NeutraText-Bold.otf") format("opentype");
   font-family: "lillyBelle";
   src: url("fonts/LillyBelle.ttf") format("truetype"); }
-/* ---- ESTILOS DEL SLIDER --- */
+@font-face {
+  font-family: "neutraTextBook";
+  src: url("fonts/NeutraText-Book.otf") format("opentype"); }
+@font-face {
+  font-family: "neutraTextBold";
+  src: url("fonts/NeutraBold.otf") format("opentype"); }
+/* ---- ESTILOS DE SOCIAL NETWORK --- */
 #links {
   width: 100%; }
 
@@ -51,7 +55,9 @@
 
 #nav ul a {
   color: #883A53;
-  font-variant: small-caps; }
+  font-family: "neutraTextBold", sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase; }
 
 #brand-logo {
   box-sizing: border-box; }
@@ -80,6 +86,11 @@
 #products {
   background-color: #883A53; }
 
+#products p {
+  color: #EFD8CC;
+  font-family: "neutraTextBook", sans-serif;
+  margin: 0; }
+
 .products-img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .products-img:hover {
@@ -87,8 +98,23 @@
 
 .products-name {
   color: #DC819C;
-  font-family: "lillyBelle", sans-serif;
-  font-size: 1.4em; }
+  font-family: "neutraTextBold", sans-serif;
+  font-size: 1.4em;
+  margin-bottom: 1vh; }
+
+.products-shop {
+  margin-right: 0.5em;
+  margin-bottom: -1vh; }
+
+.products-info {
+  color: #DC819C;
+  border: 1px solid #DC819C;
+  border-radius: 0.3em;
+  display: inline-block;
+  padding: 0.2em 0.3em; }
+  .products-info:hover {
+    background-color: #DC819C;
+    border: 1px solid #EFD8CC; }
 
 /* ---- ESTILOS DE LA GALERÍA --- */
 #sample-fabric {
@@ -109,10 +135,20 @@
 
 /* ---- ESTILOS DE HISTORIA --- */
 #about {
-  background-color: #883A53; }
+  background: url("../assets/images/leaves-background.png") no-repeat;
+  background-position: cover;
+  color: #883A53;
+  font-family: "neutraTextBook", sans-serif; }
+
+.about-text {
+  margin-top: 6vh; }
+
+.about-name {
+  font-family: "neutraTextBold", sans-serif; }
 
 /* ---- ESTILOS DE CONTACTO --- */
 #contact {
+  background-color: #EFD8CC;
   background-position: center;
   background-size: cover;
   padding: 3vh 0; }
@@ -142,20 +178,15 @@
 
 #follow {
   color: #DC819C;
-  font-variant: small-caps;
-  margin-top: 5vh; }
+  font-variant: small-caps; }
 
 .footer-icon {
-  display: inline-block;
   height: 5vh;
-  margin-top: 5vh;
   padding-left: 1vw; }
 
-.footer-logo-modo {
-  border-radius: 5px;
-  display: block;
-  height: 10vh;
-  margin-top: 2vh; }
+.footer-modo {
+  border-radius: 0.7em;
+  height: 12vh; }
 
 footer {
   background-color: #883A53;
